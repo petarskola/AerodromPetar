@@ -110,7 +110,7 @@ header
 {
     object-fit: fill;
     width: 100%;
-    height: 600px;
+    height: 85%;
     border-radius: 20px;
 }
 .skroler
@@ -578,7 +578,6 @@ select:focus, select:active, #datum:focus, #datum:active
     border-radius: 20px;
     box-shadow: 3px 3px 0 #353d3f;
 }
-
 @media only screen and (max-width: 600px) 
 {
     
