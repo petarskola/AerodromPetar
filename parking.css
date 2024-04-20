@@ -324,7 +324,7 @@ table {
   border-collapse: collapse;
 }
 table td, table th {
-  border: 1px solid #353d3f;
+  border: 1px solid #d7d8d9;
 }
 table tr:first-child th {
   border-top: 0;
