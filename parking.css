@@ -1,0 +1,387 @@
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+body
+{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lovelo';
+    font-weight: 900;
+    user-select: none;
+    background: #d7d8d9;
+}
+.logo
+{
+    position: absolute;
+    width: 100px;
+    border-radius: 100px;
+    float: left;
+    border: 2px solid #353d3f;
+}
+h1
+{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: xxx-large;
+    color: #353d3f;
+    float: left;
+    letter-spacing: 6px;
+}
+.blue
+{
+    color: #d7d8d9;
+}
+header
+{
+    background-color: #aeb1b2;
+    height: 100px;
+    padding: 10px 0 10px 10px;
+    margin: 0;
+    transition: all .5s ease;
+    position: relative;
+}
+.nav
+{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    padding: 0;
+    align-items: center;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    
+}
+.link
+{
+    display: block;
+    height: 100%;
+    width: 25%;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    background-color: transparent;
+    color: #353d3f;
+    display: grid;
+	align-items: center;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    transition: all .5s ease;
+    position: relative;
+    z-index: 1;
+}
+.link::after
+{
+    position: absolute;  
+    width: 0;
+    right: 0;
+    left: 0;
+    margin-left: auto; 
+    margin-right: auto; 
+    content: "";
+    transition: all .4s ease;
+    height: 100%;
+    z-index: -1;
+    box-shadow: inset 0 -3px 0 #d7d8d9;
+}
+.link:hover
+{
+    color: #d7d8d9;
+}
+.link:hover::after
+{  
+    width: 100%;
+    right: 0;
+    left: 0;
+}
+.link:active
+{
+    color: #353d3f;
+    box-shadow: inset 0 -40px 0 #d7d8d9;
+}
+.skroler
+{   
+    position: relative;
+    width: 70%;
+    height: 60%;
+    margin: 0 auto;
+    background: #aeb1b2;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+footer
+{
+    background-color:#aeb1b2;
+    height: 500px;
+    padding: 20px 20px 20px 100px;
+    position: relative;
+}
+h3
+{
+    font-family: 'Josefin Sans';
+    color: #353d3f;
+    margin-left: 120px;
+    margin-top: 50px;
+    font-size: xx-large;
+    margin-bottom: 40px;
+}
+.let
+{
+    position: absolute;
+    bottom: 0;
+    height: 200px;
+    width: 100%;
+    margin-left: -100px;
+}
+.avion
+{
+    background: url("airplane.png");
+    background-size: contain;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    transform: rotate(24deg);
+    animation: levo;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    top: 20px;
+    filter: invert(.4);
+}
+#a1
+{
+    top: 60px;
+    transform: scaleX(-1) rotate(24deg);
+    animation: desno;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#a11
+{
+    top: 60px;
+    transform: scaleX(-1) rotate(24deg);
+    animation: desno;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+}
+#a2
+{
+    top: 100px;
+    transform: scaleX(-1) rotate(24deg);
+    animation: desno;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#a3
+{
+    top: 140px;
+    animation: levo;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#a31
+{
+    top: 140px;
+    animation: levo;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 2.1s;
+    animation-fill-mode: both;
+}
+@keyframes levo {
+    0%   {left:0px;}
+    100% {left: 95%;}
+  }
+  @keyframes desno {
+    0%   {left: 95%;}
+    100% {left:0px;}
+  }
+h2
+{
+    font-family: 'Josefin Sans';
+    font-size: larger;
+    color:#5d6465;
+    width:fit-content;
+    height: 23px;
+    position: relative;
+    transition: all .5s ease;
+}
+h2::after
+{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    left:0;
+    height: 100%;
+    box-shadow: inset 0 -2px 0 #5d6465;
+    transition: all .5s ease;
+}
+h2:hover::after
+{
+    left:0;
+    width: 100%;
+}
+.social
+{
+    margin-top: 10px;
+    width: 40px;
+    filter:invert(.4);
+    transition: all .5s ease;
+    position: relative;
+    margin-right: 10px;
+    float: left;
+}
+.social:hover
+{
+    filter: invert(.1);
+}
+input
+{
+    position: absolute;
+    height: 23px;
+    border-radius: 50px;
+    border: 1px solid #5d6465;
+    padding-left: 15px;
+    background: #d7d8d9;
+    left: 200px;
+    top: -5px;
+    opacity: 0;
+    width: 0;
+    transition: all .5s ease;
+    font-family: 'Josefin Sans';
+}
+h2:active input
+{
+    opacity: 1;
+    width: 300px;
+}
+h2:focus input
+{
+    opacity: 1;
+    width: 300px;
+}
+input:focus
+{
+    outline: none;
+    opacity: 1;
+    width: 300px;
+}
+::placeholder 
+{
+    font-family: 'Josefin Sans';
+}
+#send
+{
+    position: absolute;
+    height: 25px;
+    border-radius: 50px;
+    background: white url("right.png");
+    filter: invert(.7);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 530px;
+    top: -4px;
+    width: 25px;
+    opacity: 0;
+    transition: all .5s ease .4s;
+    font-family: 'Josefin Sans';
+}
+#send:hover
+{
+    filter: invert(.9);
+}
+table
+{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+table, tr, td
+{
+    font-family: 'Josefin Sans';
+    border-collapse: collapse;
+    border-radius: 20px;
+    color: #353d3f;
+}
+table {
+  border-collapse: collapse;
+}
+table td, table th {
+  border: 1px solid #353d3f;
+}
+table tr:first-child th {
+  border-top: 0;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table tr td:first-child,
+table tr th:first-child {
+  border-left: 0;
+}
+table tr td:last-child,
+table tr th:last-child {
+  border-right: 0;
+}
+tr
+{
+    background: #aeb1b2;
+    filter: brightness(1);
+    transition: all .2s ease;
+}
+table:hover tr
+{
+    filter: brightness(.8);
+}
+table tr:hover
+{
+	z-index: 500;
+    filter: brightness(1); 
+}
+.desnaT
+{
+    width: 70%;
+    padding-left: 20%;
+}
+.srendji td
+{
+    border-radius: 0;
+}
+#prvi .desnaT
+{
+    border-radius: 20px 0 0 0;
+}
+#prvi .levaT
+{
+    border-radius: 0 20px 0 0 ;
+}
+#psolednji .desnaT
+{
+    border-radius: 0 0 0 20px;
+}
+#psolednji .levaT
+{
+    border-radius: 0 0 20px 0;
+}
+@media only screen and (max-width: 600px) 
+{
+    
+}
+  
