@@ -418,11 +418,12 @@ input
     padding-left: 15px;
     background: #d7d8d9;
     left: 200px;
-    top: -5px;
+    bottom: 0;
     opacity: 0;
     width: 0;
     transition: all .5s ease;
     font-family: 'Josefin Sans';
+    box-sizing: border-box;
 }
 h2:active input
 {
@@ -454,8 +455,8 @@ input:focus
     background-size: 18px;
     background-repeat: no-repeat;
     background-position: center;
-    left: 530px;
-    top: -4px;
+    left: 510px;
+    bottom: 0;
     width: 25px;
     opacity: 0;
     transition: all .5s ease .4s;
@@ -589,7 +590,251 @@ select:focus, select:active, #datum:focus, #datum:active
     border-radius: 15px;
     box-shadow: 0px 5px 0 #353d3f;
 }
+#skl-1
+{
+    height: 9%; margin: 20px auto;
+}
+#skl-2
+{
+    height: 25%; margin: 20px auto;
+}
+#skl-3
+{
+    height: 58%; margin: 20px auto;
+}
+#skl-4
+{
+    height: 50%; margin: 20px auto;
+}
+#skl-5
+{
+    height: 40%; margin: 20px auto 100px;
+}
+.paragraf
+{
+    position: absolute; max-width: 70%; 
+    left: 0; right: 0; margin: 80px 0 80px 30px; font-family: Josefin Sans;
+    color: #353d3f; font-weight: 200; font-size: large;
+}
+#t1
+{
+    width: 100%;
+    position: absolute;
+    bottom: 6%;
+    left: 1%;
+    font-size: x-large;
+    color: #353d3f;
+    font-family: 'Josefin Sans';
+    letter-spacing: 1.4px;
+    transition: all .5s ease;
+}
+#t2
+{
+    width: 100%;
+    position: absolute;
+    bottom: 1.5%;
+    left: 1%;
+    font-size: 15px;
+    color:#5d6465;
+    font-size: large;
+    font-family: 'Josefin Sans';
+    letter-spacing: 1.4px;
+    transition: all .5s ease;
+}
+#myPlot, #myPlot1
+{
+    height: 85%;
+    width:100%; 
+    margin: 0 auto; 
+    position: absolute;
+}
 @media only screen and (max-width: 600px) 
 {
+    *
+    {
+        overflow-x:hidden;
+    }
+    .nav, header
+    {
+        width: 100%;
+    }
+    header
+    {
+        height:fit-content;
+    }
+    #gornji
+    {
+        display: none;
+    }
+    h1
+    {
+        text-align: left;
+        margin: 0;
+        width: 100%;
+    }
+    .skroler
+    {
+        width: 96%;
+        height: 60%;
+        padding: 0;
+    }
+    .videop, #slicice
+    {
+        height: 75%;
+    }
+    #tekstovi
+    {
+        height: fit-content;
+        position: relative;
+        padding: 10% 0 0 0;
+        margin: 0;
+    }
+    #tekstic
+    {
+       position: relative;
+       margin: 0;
+       margin-top: -4%;
+    }
+    #t1
+    {
+        height: fit-content;
+        position: relative;
+        padding: 40% 0 0 0;
+        margin: 0;
+    }
+    .skrolici
+    {
+        top: 60%;
+        width: 90%;
+    }
+    .skrolic
+    {
+        box-shadow: none;
+        border: 1px solid #353d3f;
+        box-sizing: border-box;
+    }
+    footer
+    {
+        padding: 10px 5px;
+    }
+    .logo
+    {
+        border: none;
+    }
+    .let
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+    h2
+    {
+        height: max-content;
+        overflow: hidden;
+        width: 100%;
+        width: max-content;
+    }
+    #po
+    {
+        width: 100%;
+    }
+    input
+    {
+        box-sizing: border-box;
+        height: fit-content;
+        width: 0px;
+    }
+    h2:active input
+    {
+        opacity: 1;
+        width: 10px;
+    }
+    h2:focus input
+    {
+        opacity: 1;
+        width: 10px;
+    }
+    input:focus
+    {
+        outline: none;
+        opacity: 1;
+        width: 10px;
+    }
+    #skl-1
+    {
+        height: 9%;
+        margin: 20px auto;
+        padding: 0 0 5px 0;
+    }
+    #skl-2
+    {
+        height: 25%; 
+        margin: 20px auto;
+    }
+    #skl-3
+    {
+        height: 58%; 
+        margin: 20px auto;
+    }
+    #skl-4
+    {
+        height: 50%; 
+        margin: 20px auto;
+    }
+    #skl-5
+    {
+        height: 40%; 
+        margin: 20px auto 100px;
+    }
+    #skl-2, #skl-3, #skl-4, #skl-5
+    {
+        height: max-content;
+    }
+    .paragraf
+    {
+        position: relative;
+        margin-bottom: 5px;
+    }
+    #pSl1, #pSl2
+    {
+        inset: unset;
+        width: 90%;
+        position: relative;
+        margin: 0 20px 20px 20px;
+    }
+    .raspored
+    {
+        width: 96%;
+        height: max-content;
+        padding: 15px 0 25px 25px;
+    }
+    td
+    {
+        width: 0;
+    }
+    .destinacija, #datum, select, button
+    {
+        height: 25px;
+        width: 100%;
+    }
+    #myPlot, #myPlot1
+    {
+        position: relative;
+        width: 110%;
+        height: 80%;
+        margin: 0 auto;
+    }
+    #t1, #t2
+    {
+        position: relative;
+        margin-top: 0;
+        inset: unset;
+        padding: 0 10px;
+    }
+    #ss
+    {
+        padding: 0;
+        box-sizing: border-box;
+        height: fit-content;
+    }
 }
   

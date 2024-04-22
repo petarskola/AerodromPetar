@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aerodrom Petar - Putnici</title>
+    <title>Aerodrom Petar - Početna</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.cdnfonts.com/css/lovelo" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
@@ -13,7 +13,7 @@
     <header id="hideH">
         <a href="index.html" style="position: absolute;width: 100px; height: 104px;
          border-radius: 104px; z-index: 5;
-        float: left;" class="linkH"><img class="logo"src="ppp.png"></a>
+        float: left;" class="linkH"><img id="gornji"class="logo"src="ppp.png"></a>
         <h1 >AERODROM <span class="blue">Petar</span></h1>
     </header>
     <div id="head" style="transition: all .5s ease;z-index: 9;width: 100%; height: 40px; position: relative; background-color:#5d6465;">
@@ -24,15 +24,13 @@
             <a href="onama.html" class="link">Statistika</a>
         </div>
     </div>
-    <div class="skroler" style="height: 9%; margin: 20px auto;">
+    <div class="skroler" id="skl-1" >
         <h3 style="position: absolute; margin: 30px 0 0 30px;">Kontrole putnika</h3>
     </div>  
-    <div class="skroler" style="height: 25%; margin: 20px auto;">
+    <div class="skroler" id="skl-2" >
         <h3 style="position: absolute; margin: 30px 0 0 30px;
          font-weight: 100;">Pristupna kontrola</h3>
-        <p style="position: absolute; max-width: 70%; 
-        left: 0; right: 0; margin: 80px 0 80px 30px; font-family: Josefin Sans;
-        color: #353d3f; font-weight: 200; font-size: large;">
+        <p class="paragraf">
             Pristupna kontrola predstavlja sistem organizacije 
             efikasnijeg pristupa odlazećih putnika izlazu za 
             ukrcavanje u avion (eng. gate). Na pultu pristupne 
@@ -47,12 +45,10 @@
             potrebama.
         </p>
     </div>
-    <div class="skroler" style="height: 58%; margin: 20px auto;">
+    <div class="skroler" id="skl-3" >
         <h3 style="position: absolute; margin: 30px 0 0 30px;
          font-weight: 100;">Pregled obezbeđivanja</h3>
-        <p style="position: absolute; max-width: 70%; 
-        left: 0; right: 0; margin: 80px 0 80px 30px; font-family: Josefin Sans;
-        color: #353d3f; font-weight: 200; font-size: large;">
+        <p class="paragraf">
             Pregled obezbeđivanja putnika, ručnog prtljaga i
              stvari koje putnici nose sa sobom vrši se neposredno 
              pre pasoške kontrole i ulaska u čekaonicu u kojoj se 
@@ -93,12 +89,10 @@
         </p>
         <img src="putnici2.bmp" id="pSl1">
     </div>
-    <div class="skroler" style="height: 50%; margin: 20px auto;">
+    <div class="skroler" id="skl-4">
         <h3 style="position: absolute; margin: 30px 0 0 30px;
          font-weight: 100;">Pasoška kontrola</h3>
-        <p style="position: absolute; max-width: 70%; 
-        left: 0; right: 0; margin: 80px 0 80px 30px; font-family: Josefin Sans;
-        color: #353d3f; font-weight: 200; font-size: large;">
+        <p class="paragraf" >
         Pasoška kontrola se nalazi na izlazu i ulazu u zemlju.
         <br><br>
         Za letove u odlasku, pasoška kontrola se nalazi odmah nakon mesta obavljanja pregleda obezbeđivanja.
@@ -115,12 +109,10 @@
         Ukoliko prilikom putovanja presedate, raspitajte se da li su Vam potrebne tranzitne vize. Takođe, raspitajte se o potrebnoj dokumentaciji ukoliko u inostranstvo putujete sa maloletnom osobom.
          </p>
     </div>
-    <div class="skroler" style="height: 40%; margin: 20px auto 100px;">
+    <div  class="skroler"id="skl-5" >
         <h3 style="position: absolute; margin: 30px 0 0 30px;
          font-weight: 100;">Carina</h3>
-        <p style="position: absolute; max-width: 70%; 
-        left: 0; right: 0; margin: 80px 0 80px 30px; font-family: Josefin Sans;
-        color: #353d3f; font-weight: 200; font-size: large;">
+        <p class="paragraf">
          Carinska kontrola se nalazi pre pasoške kontrole u odlasku iz zemlje, i nakon pasoške kontrole u dolasku u zemlju.
          <br><br>
          Ukoliko u dolasku u zemlju posedujete robu koja podleže plaćanju uvoznih dažbina ili robu čiji uvoz nije dozvoljen koristite označen “crveni prolaz” nakon pasoške kontrole. U suprotnom koristite “zeleni prolaz”.
