@@ -842,7 +842,7 @@ select:focus, select:active, #datum:focus, #datum:active
 	    opacity: 1;
 	    width: 100%;
 	    border-radius: 20px;
-	    box-shadow: 3px 3px 0 #353d3f;
+	    box-shadow: none;
     }
 }
   
